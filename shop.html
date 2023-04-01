@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="momoshop-styles.css">
+    <link rel="icon" href="multimedia/momoroisotype.png">
+    <title>MOMORO SHOP</title>
+</head>
+<body>
+    <header>
+        <img src="multimedia/logo.png" id="momoro-logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="us-momoroshop.html">Us</a></li>
+                <li><a href="">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <section id="shop-nav">
+            <ol id="shop-category">
+                <li><button class="tab-button category-toggle tab-button-active" id="all-toggle">All</button></li>
+                <li><button class="tab-button category-toggle" id="clothes-toggle">Clothes</button></li>
+                <li><button class="tab-button category-toggle" id="decor-toggle">Decor</button></li>
+                <li><button class="tab-button category-toggle" id="stationery-toggle">stationery</button></li>
+                <li><button class="tab-button category-toggle" id="gadgets-toggle">Gadgets</button></li>
+            </ol>
+            <div id="shop-filters">
+                <div id="shop-search-container">
+                    <form action="">
+                       <label for="shop-search-field">Search:</label>
+                        <input type="text" id="shop-search-field" class="field">
+                    </form>
+                </div>
+                <button id="form-toggle" class="tab-button">Filter</button>
+                <div id="shop-form-container">
+                    <form action="" id="shop-form">
+                        <label for="filter-price">Price:</label>
+                        <select id="filter-price" class="field long-field">
+                            <option value="no-filter">No filter</option>
+                            <option value="higher-to-lower">Higher to lower</option>
+                            <option value="lower-to-higher">Lower to higher</option>
+                        </select>
+                        <label for="filter-date">Date:</label>
+                        <select id="filter-date" class="field long-field">
+                            <option value="no-filter">No filter</option>
+                            <option value="higher-to-lower">Newest</option>
+                            <option value="lower-to-higher">Older</option>
+                        </select>
+
+                        <input type="filter" value="submit" class="button-style button-style-alt long-field" id="filter-submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="shop-main" class="blossom-container">
+
+        </section>
+
+        <footer>
+            <p id="all-rights-reserved">MOMOROSHOP - All rights reserved ®</p>
+            <img src="multimedia/momoroisotype.png" alt="Isotype" id="footer-isotype">
+        </footer>
+    </body>
+
+    <script src="momoshop-shop-script.js"></script>
+</body>
+</html>
